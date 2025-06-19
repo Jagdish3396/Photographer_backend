@@ -12,14 +12,6 @@ public class PhotoController {
 
     @Autowired private PhotoService photoService;
 
-//    @PostMapping("/upload")
-//    public ResponseEntity<?> upload(
-//            @RequestPart MultipartFile file,
-//            @RequestPart Long albumId,
-//            @RequestPart String photoName) {
-//        // call photoService.uploadPhoto with MultipartFile and others
-//        return ResponseEntity.ok(photoService.uploadPhoto(file, albumId, photoName));
-//    }
     
     @PostMapping("/upload")
     public ResponseEntity<?> upload(

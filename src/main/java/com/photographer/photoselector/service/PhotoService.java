@@ -37,7 +37,8 @@ public class PhotoService {
             // Create and save Photo entity
             Photo photo = new Photo();
             photo.setFileName(fileName);
-            photo.setStorageUrl(path.toString());
+//            photo.setStorageUrl(path.toString());
+            photo.setUrl(path.toString());
             photo.setAlbum(album);
 
             return photoRepository.save(photo);
